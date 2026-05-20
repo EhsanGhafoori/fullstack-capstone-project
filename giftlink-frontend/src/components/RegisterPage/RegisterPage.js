@@ -19,7 +19,7 @@ function RegisterPage() {
         const response = await fetch(`${urlConfig.backendUrl}/api/auth/register`, {
             method: 'POST',
             headers: {
-                'content-type': 'application/json',
+                'Content-Type': 'application/json',
             },
             body: JSON.stringify({
                 firstName: firstName,

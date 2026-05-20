@@ -1,0 +1,11 @@
+services:
+  mongodb:
+    image: mongo:7
+    container_name: giftlink-mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - giftlink_mongo_data:/data/db
+
+volumes:
+  giftlink_mongo_data:

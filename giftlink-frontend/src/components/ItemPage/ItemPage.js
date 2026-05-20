@@ -38,7 +38,7 @@ function ItemPage() {
       formData.append('comments', []);
 
           try {
-            let url = `${urlConfig.backendUrl}/api/secondchance/items`;
+            let url = `${urlConfig.backendUrl}/api/gifts`;
             console.log(url);
               const response = await fetch(url, {
                 method: 'POST',
